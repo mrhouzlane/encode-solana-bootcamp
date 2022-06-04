@@ -6,7 +6,7 @@ pub struct RussianRulette {
     pub authority: Pubkey,
     pub random_oracle: Pubkey, // Oracle to retrieve random number
     pub players_idx: u32, // The idx of players participating
-    pub ticket_price: u64
+    pub ticket_price: u64,
     pub bullet: u8
 }
 

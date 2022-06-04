@@ -24,7 +24,8 @@ fn main() {
     // loops::run();
     // functions::run();
     // pointer_ref::run();
-    structs::run();
+    // structs::run();
+    // stack_heap::run();
 }
 
 
