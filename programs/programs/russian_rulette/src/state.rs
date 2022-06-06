@@ -1,11 +1,10 @@
 use anchor_lang::prelude::*;
-use std::str::FromStr;
 
 #[account]
-pub struct RussianRulette {
+pub struct RussianRoulette {
     pub authority: Pubkey,
     pub random_oracle: Pubkey, // Oracle to retrieve random number
-    pub players_idx: u32, // The idx of players participating
+    pub players_idx: u8, // The idx of players participating
     pub ticket_price: u64,
     pub bullet: u8
 }
