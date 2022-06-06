@@ -12,7 +12,7 @@ mod state;
 const MAX_PLAYERS: u8 = 7;
 const NO_TICKETS: u8 = 0;
 
-declare_id!("4o6SXpPZTdZzjg8mVB4kiH6zcrbbdL79gsArBpyCvMCQ");
+declare_id!("CjwjKyWT9FWUaKKsU7X1JBJCd1J18ERGfAHsp1Hc8bER");
 
 #[program]
 mod russian_roulette {
