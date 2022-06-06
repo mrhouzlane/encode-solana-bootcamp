@@ -103,10 +103,6 @@
             "type": "publicKey"
           },
           {
-            "name": "randomOracle",
-            "type": "publicKey"
-          },
-          {
             "name": "playersIdx",
             "type": "u8"
           },
@@ -165,5 +161,8 @@
       "name": "InvalidatedUser",
       "msg": "You are invalidated"
     }
-  ]
+  ],
+  "metadata": {
+    "address": "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+  }
 }

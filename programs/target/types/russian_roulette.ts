@@ -103,10 +103,6 @@ export type RussianRoulette = {
             "type": "publicKey"
           },
           {
-            "name": "randomOracle",
-            "type": "publicKey"
-          },
-          {
             "name": "playersIdx",
             "type": "u8"
           },
@@ -270,10 +266,6 @@ export const IDL: RussianRoulette = {
         "fields": [
           {
             "name": "authority",
-            "type": "publicKey"
-          },
-          {
-            "name": "randomOracle",
             "type": "publicKey"
           },
           {
