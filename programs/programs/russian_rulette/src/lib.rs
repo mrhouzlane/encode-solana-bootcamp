@@ -23,6 +23,7 @@ declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
 pub mod russian_rulette {
     use super::*;
 
+
     pub fn create_game(ctx: Context<InitializeGame>, ticket_price: u64, random_oracle: Pubkey) -> Result<()> {
 
         let russian_rulette: &mut Account<RussianRulette> = &mut ctx.accounts.russian_rulette;
