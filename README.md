@@ -8,8 +8,12 @@ Program deployed :
 
 Structure of the Game : 
 
-- A Player enters the Game by buying a ticket.
-- Player pulls the trigger : wins = x2 his initial stake | looses = out of the game. 
+PLAYER BUY TICKET
+PLAYER PULLS TRIGGER 
+WON / LOST ? (RANDOMNESS)
+REWARDS ? 
+FRONT END (to be done) 
+
 
 
 
