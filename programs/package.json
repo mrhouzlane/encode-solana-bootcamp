@@ -6,6 +6,7 @@
     },
     "dependencies": {
         "@babel/plugin-transform-regenerator": "^7.18.0",
+        "@babel/preset-env": "^7.18.2",
         "@project-serum/anchor": "^0.24.2",
         "@solana/web3.js": "^0.30.11",
         "babel-runtime": "^6.26.0",
