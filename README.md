@@ -1,6 +1,19 @@
 # russianRoulette
-We are building a russian roulette using Rust and deploying it in Solana 
+Repository for a RUSSIAN ROULETTE GAME : 
 
-Program Id deployed : 
+Program deployed : 
 
 #### Devnet : [Deployed addresss](https://explorer.solana.com/address/CjwjKyWT9FWUaKKsU7X1JBJCd1J18ERGfAHsp1Hc8bER?cluster=devnet)
+
+
+Structure of the Game : 
+
+- A Player enters the Game by buying a ticket.
+- Player pulls the trigger : wins = x2 his initial stake | looses = out of the game. 
+
+
+
+
+
+
+
