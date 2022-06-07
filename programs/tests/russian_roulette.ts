@@ -6,36 +6,40 @@ import { RussianRoulette } from "../target/types/russian_roulette";
 const LAMPORTS_PER_SOL = 1_000_000_000;
 
 
-const provider = anchor.AnchorProvider.env();
-anchor.setProvider(provider);
 
 
 describe("russian_rulette", () => {
   // Configure the client to use the local cluster.
+  const provider = anchor.AnchorProvider.env();
+  anchor.setProvider(provider);
+
   const program = anchor.workspace.RussianRulette as Program<RussianRoulette>;
   const user = provider.wallet;
 
   it("Initialized!", async () => {
-
-    console.log("Test print");
-    // Add your test here.
-    //const tx = await program.methods.execute("").rpc();
     const signer_keypair: Keypair = anchor.web3.Keypair.generate();
-    let russian_roulette_key: PublicKey;
+    const tx =  await program.methods.createGame(new anchor.BN(2)).signers([signer_keypair]).rpc();
+  });
 
-    // Give SOL to our account
-    await provider.connection.confirmTransaction(
-      await provider.connection.requestAirdrop(signer_keypair.publicKey, 100 * LAMPORTS_PER_SOL)
-    );
-    const program = anchor.workspace.RussianRulette as Program<RussianRoulette>;
-    console.log("Test end");
+    // console.log("Test print");
+    // // Add your test here.
+    // //const tx = await program.methods.execute("").rpc();
+    // const signer_keypair: Keypair = anchor.web3.Keypair.generate();
+    // let russian_roulette_key: PublicKey;
 
-    //Create game test : 
-    const ticket_price = 20;
-    let create_game_tx = await program.methods.createGame(new anchor.BN(2)).signers([signer_keypair]).rpc();
+    // // Give SOL to our account
+    // await provider.connection.confirmTransaction(
+    //   await provider.connection.requestAirdrop(signer_keypair.publicKey, 100 * LAMPORTS_PER_SOL)
+    // );
+    // const program = anchor.workspace.RussianRulette as Program<RussianRoulette>;
+    // console.log("Test end");
 
-    });
-    // russian_roulette.ticket_price = ticket_price;
+    // //Create game test : 
+    // const ticket_price = 20;
+    // let create_game_tx = await program.methods.createGame(new anchor.BN(2)).signers([signer_keypair]).rpc();
+
+   
+    // // russian_roulette.ticket_price = ticket_price;
 
 });
 
