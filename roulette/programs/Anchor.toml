@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.devnet]
+russian_roulette = "CjwjKyWT9FWUaKKsU7X1JBJCd1J18ERGfAHsp1Hc8bER"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/mehdirhouzlane/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
